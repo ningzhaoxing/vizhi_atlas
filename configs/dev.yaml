@@ -1,0 +1,26 @@
+app:
+  name: "vizhi_atlas"
+  mode: "debug"  # debug or release
+  host: "0.0.0.0"
+  port: 8081
+  version: "v1.0.0"
+
+db:
+  type: "mysql"
+  config:
+    host: "localhost"
+    port: "3306"
+    db: "vizhi_atlas"
+    username: "root"
+    password: "123456"
+    maxCon: 500
+    maxIdle: 20
+
+logger:
+  level: "debug"
+  filename: "./logs"
+  compress: true
+  console: true
+  maxSize: 100
+  maxBackups: 30
+  maxAge: 30
